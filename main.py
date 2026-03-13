@@ -75,7 +75,7 @@ def generate_plot(payload : MathPayload):
         if n_mag != 0:
             distance = abs(np.dot(AB, n)) / n_mag
             # Add text to the graph displaying the calculated distance
-            fig.add_annotation(text=f"Shortest Distance: {distance:.2f}",
+            fig.add_annotation(text=f"Shortest Distance of skew lines: {distance:.2f}",
                                xref="paper", yref="paper", x=0, y=1, showarrow=False)
 
         # 3. Finalize the layout and convert to HTML
